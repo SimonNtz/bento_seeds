@@ -54,6 +54,7 @@ sudo apt-get update -y
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 sudo apt-get install docker-compose -y
+sudo groupadd docker
 sudo usermod -a -G docker $USER
 
 ## NODE ##
@@ -66,5 +67,6 @@ sudo npm install -g node-gyp -y
 
 # Hyperledger Fabric binaries install script
 
-cd .
+cd $HOME
+
 curl -sSL https://goo.gl/6wtTN5 | sudo bash -s # CHECK VERSIONNING
