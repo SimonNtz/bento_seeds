@@ -75,8 +75,5 @@ Vagrant.configure("2") do |config|
     git clone https://github.com/SimonNtz/bento_seeds
     cd bento_seeds && sudo bash fab.sh
   SCRIPT
-
-  config.vm.provision "shell",
-    inline: $script
-#    inline: "/bin/sh fab.sh"
+  config.vm.provision "shell", inline: $script,privileged: false
 end
