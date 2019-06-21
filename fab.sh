@@ -69,4 +69,4 @@ sudo npm install -g node-gyp -y
 
 cd $HOME
 
-curl -sSL https://goo.gl/6wtTN5 | sudo bash -s # CHECK VERSIONNING
+#curl -sSL https://goo.gl/6wtTN5 | sudo bash -s # CHECK VERSIONNING
